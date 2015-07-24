@@ -1,19 +1,27 @@
 
 @media screen and (max-width: 767px) {
   nav {
-    background: none;
-    float: right;
+
     font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
   }
-  #title {
+
+  nav li{
+    font-size: .8em;
+    display: inline-block;
+    padding: 5px px;
+    background-color: rgba(128,128,128, .5);
+  }
+
+  /*#title {
     float: left;
     margin-left: 5%;
     text-align: left;
     width: 45%;
-  }
+  }*/
 }
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -25,12 +33,19 @@
     text-align: right;
     width: 45%;
   }
-  #title {
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 20px;
+  }
+
+  /*#title {
     float: left;
     margin-left: 5%;
     text-align: left;
     width: 45%;
-  }
+  }*/
 }
 /*full desktop*/
 @media screen and (min-width: 1024px) {
@@ -42,10 +57,24 @@
     text-align: right;
     width: 45%;
   }
-  #title {
+
+  nav li{
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: rgba(128,128,128, .5);
+  }
+
+  .logo {
+    float:left
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    padding: 5px 20px;
+  }
+
+  /*#title {
     float: left;
     margin-left: 5%;
     text-align: left;
     width: 45%;
-  }
+  }*/
 }

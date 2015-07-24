@@ -12,7 +12,7 @@ a {
 
 header {
   width: 100%;
-  max-height: 90px;
+  max-height: 80px;
   position: fixed;
   top: 0px;
   background-color: rgba(128,128,128, .3);
@@ -50,17 +50,16 @@ header {
 
 /*Add white semi opaque background to page text*/
 .content-wrapper {
-  padding: 10% 5%;
   max-width: 940px;
   margin: 0 auto;
   padding-top: 90px;
 }
 .content {
   background-color: rgba(255,255,255, .9);
-  padding: 5% 5%;
+
   max-width: 940px;
   margin: 10% auto;
-  padding-top: 60px;
+  padding: 60px 5% 60px;
 }
 
 #scroll-to-top {
@@ -139,18 +138,13 @@ img {
 Header
 **********************************/
 .logo {
-  float:left
-  -webkit-filter: invert(1);
-  filter: invert(1);
-  padding: 5px 20px;
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 
-nav li{
-  display: inline-block;
-  padding: 5px 5px;
-  background-color: rgba(128,128,128, .5);
-}
+
 
 h1 {
   font-family: 'Lato', sans-serif;
