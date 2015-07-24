@@ -49,21 +49,19 @@ header {
 }
 
 /*Add white semi opaque background to page text*/
-.content {
+.content-wrapper {
   background-color: rgba(255,255,255, .9);
   padding: 5% 5%;
-}
-
-.content:nth-child(1) {
-  padding-top: 180px;
-  max-width: 940px;
-  margin: 90px auto;
-}
-
-.content:nth-child(n+2) {
   max-width: 940px;
   margin: 0 auto;
   padding-top: 90px;
+}
+.content {
+  background-color: rgba(255,255,255, .9);
+  padding: 5% 5%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding-top: 60px;
 }
 
 #scroll-to-top {
@@ -76,6 +74,22 @@ header {
   right: 25px;
   bottom: 25px;
   z-index: 10;
+}
+
+#phone-cta {
+  height: auto;
+  width: auto;
+  padding: 0 7px;
+  background-color: rgba(128,128,128, .3);
+  float: left;
+  position: fixed;
+  left: 3%;
+  bottom: 33px;
+  z-index: 10;
+}
+#phone-cta i{
+  padding-top: 5px;
+  padding-right: 3px;
 }
 
 .black-text {
@@ -114,9 +128,11 @@ img {
 /*********************************
 Header
 **********************************/
-#title {
-  text-align: center;
-  /*background-color: blue;*/
+.logo {
+  float:left
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  padding: 10px 20px;
 }
 
 
