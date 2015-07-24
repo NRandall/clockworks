@@ -1,4 +1,39 @@
-@media screen and (min-width: 920px) {
+
+@media screen and (max-width: 767px) {
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+  #title {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+  #title {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+}
+/*full desktop*/
+@media screen and (min-width: 1024px) {
   nav {
     background: none;
     float: right;
