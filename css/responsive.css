@@ -1,16 +1,13 @@
-@media screen and (min-width: 920px) {
-  nav {
-    background: none;
-    float: right;
-    font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
-  }
-  #title {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;
-  }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/*styles for mobile*/
+
+
+
+  /*********************************
+  Mobile menu
+  **********************************/
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
 }

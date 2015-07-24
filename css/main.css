@@ -8,6 +8,7 @@ body {
 
 a {
   text-decoration:none;
+  outline: 0;
 }
 
 header {
@@ -17,6 +18,25 @@ header {
   top: 0px;
   background-color: rgba(128,128,128, .3);
   margin: 0px auto;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  margin: 15px 0;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 0.8em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+p {
+    text-align: center;
 }
 
 /*Set each "page" to the screen dimensions*/
@@ -49,21 +69,19 @@ header {
 }
 
 /*Add white semi opaque background to page text*/
-.content {
+.content-wrapper {
   background-color: rgba(255,255,255, .9);
   padding: 5% 5%;
-}
-
-.content:nth-child(1) {
-  padding-top: 180px;
-  max-width: 940px;
-  margin: 90px auto;
-}
-
-.content:nth-child(n+2) {
   max-width: 940px;
   margin: 0 auto;
   padding-top: 90px;
+}
+.content {
+  background-color: rgba(255,255,255, .9);
+  padding: 5% 5%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding-top: 60px;
 }
 
 #scroll-to-top {
@@ -73,9 +91,27 @@ header {
   background-color: rgba(128,128,128, .3);
   float: right;
   position: fixed;
-  right: 25px;
+  right: 3%;
   bottom: 25px;
   z-index: 10;
+}
+
+#phone-cta {
+  height: auto;
+  width: auto;
+  padding: 0 7px;
+  background-color: rgba(128,128,128, .3);
+  float: left;
+  position: fixed;
+  left: 3%;
+  bottom: 33px;
+  z-index: 10;
+}
+#phone-cta i{
+  padding-top: 5px;
+  padding-right: 3px;
+}
+.phone-number{
 }
 
 .black-text {
@@ -86,24 +122,14 @@ header {
   color: #fff;
 }
 
-#map {
-  max-width: 400px;
-  border-style: solid;
-  border-width: medium;
-  display: block;
-  margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
-}
-
 #head a {
   color: #fff;
 }
 
 #services ul {
-  padding-left: 30%;
+  display: block;
+  max-width: 380px;
+  margin: 0 auto 30px;
 }
 
 #contact li {
@@ -114,44 +140,62 @@ img {
 /*********************************
 Header
 **********************************/
-#title {
-  text-align: center;
-  /*background-color: blue;*/
-}
 
-
-h1 {
-  font-family: 'Lato', sans-serif;
-  margin: 15px 0;
-  font-size: 3em;
-  font-weight: normal;
-  line-height: 0.8em;
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2em;
-  margin: -5px 0 0;
-  font-weight: normal;
-}
-p {
-    text-align: center;
+.logo {
+  float:left
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  padding: 10px 20px;
 }
 
 /*********************************
 Navigation
 **********************************/
-/*nav {
-  text-align: center;
-  float: center;
-  padding: 10px;
-  margin: 20px 20px 0;
-}*/
-
+nav ul{
+  float: right;
+  max-width: 350px;
+}
 nav li{
   display: inline-block;
-  padding-left: 20px;
+  padding: 20px 5px;
+}
+
+/*********************************
+Home
+**********************************/
+
+/*********************************
+Services
+**********************************/
+
+/*********************************
+About
+**********************************/
+
+.profile-photo {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 30px;
+}
+
+/*********************************
+Contact
+**********************************/
+
+#map {
+  max-width: 400px;
+  border-style: solid;
+  border-width: medium;
+  display: block;
+  margin: 0 auto;
+}
+
+/*********************************
+Mobile menu
+**********************************/
+
+#cssmenu {
+    display:none; /*hide menu icon initially*/
 }
 
 /*********************************
@@ -162,8 +206,9 @@ footer {
   font-size: 0.75em;
   text-align: center;
   clear: both;
-  padding-top: 50px;
+  padding: 30px 0;
   color: #4f372d;
+  background-color: lightgrey;
 }
 
 /*********************************
@@ -173,7 +218,7 @@ Colors
 body {
   background-color: #eee;
   color: #000;
-}s
+}
 
 nav a, nav a:visited {
   color: #fff;

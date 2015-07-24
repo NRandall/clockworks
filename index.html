@@ -6,6 +6,7 @@
     <title>Litchfield Clockworks</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
@@ -14,29 +15,40 @@
   </head>
 <body id="top">
 	<div id='head'>
-        <header>
-          <a href="index.html" id="title">
-            <h1>Litchfield Clockworks</h1>
-            <h2><a href="tel:623-759-3151">623.759.3151</h2>
-          </a>
-          <nav>
+      <header>
+        <a href="index.html" id="title">
+          <a href="#top" class="smoothScroll logo"><img src="img/logo.png"></a>
+        </a>
+        <nav>
+          <ul>
+            <li><a href = "#top" class="smoothScroll">Home</a></li>
+            <li><a href = "#services"class="smoothScroll">Repair Services</li>
+            <li><a href = "#about"class="smoothScroll">About</li>
+            <li><a href = "#contact"class="smoothScroll">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- <nav id="ddmenu">
+          <div id='cssmenu'>
             <ul>
-              <li><a href = "#top" class="smoothScroll">Home</a></li>
-              <li><a href = "#services"class="smoothScroll">Repair Services</li>
-              <li><a href = "#about"class="smoothScroll">About</li>
-              <li><a href = "#contact"class="smoothScroll">Contact</a></li>
+               <li class='has-sub'><a href='#'><span class="fa fa-bars fa-lg white-text"></span></a>
+                  <ul>
+                     <li><a href="#services"class="smoothScroll"><span>Repair Services</span></a></li>
+                     <li><a href="#about"class="smoothScroll"><span>About</span></a></li>
+                     <li class='last'><a href="#contact"class="smoothScroll"><span>Contact</span></a></li>
+                  </ul>
+               </li>
             </ul>
-          </nav>
-        </header>
+        </nav> -->
+      </header>
     </div>
     <div id="wrapper">
-      <section id="home">
+      <section id="home" class="content-wrapper">
         <div class="content">
           <h2>Clock Repair</h2>
           <p>Has your clock stopped ticking and worst of all, tocking? Is your cuckoo bird missing in action every midnight? If you’re clock is no longer properly functioning, <a href = "#contact"class="smoothScroll">contact</a> Jerry at Litchfield Clockworks.</p>
         </div>
       </section>
-      <section id="services" class="content">
+      <section id="services" class="content-wrapper">
         <div class="content">
           <div class="text-wrapper">
             <h2>Repair Services</h2>
@@ -52,19 +64,21 @@
           </div>
         </div>
       </section>
-      <section id="about" class="content">
+      <section id="about" class="content-wrapper">
         <div class="content">
+          <img src="img/FillMurray.jpg" class="profile-photo">
           <h2>About</h2>
           <p>Has your clock stopped ticking and worst of all, tocking? Is your cuckoo bird missing in action every midnight? If you’re clock is no longer properly functioning, contact Jerry at Litchfield Clockworks.</p>
+
         </div>
       </section>
-      <section id="contact" class="content">
+      <section id="contact" class="content-wrapper">
         <div class="content">
           <h2>Contact</h2>
           <p>Please contact me to schedule an appointment.</p>
           <ul class="contact-info">
-            <li class="email"><a href="mailto:jerry.donnelly@gmail.com"><i class="fa fa-envelope fa-lg"></i> jerry.donnelly@gmail.com</a></li>
-            <li class="phone"><a href="tel:623-759-3151"><i class="fa fa-phone fa-lg"></i> 623.759.3151</a></li>
+            <li class="email"><a href="mailto:jerry.donnelly@gmail.com"><i class="fa fa-envelope fa-lg black-text"></i>  jerry.donnelly@gmail.com</a></li>
+            <li class="phone"><a href="tel:623-759-3151"><i class="fa fa-phone fa-lg black-text"></i>  623.759.3151</a></li>
             <li class="address">500 East Fairway Dr, Litchfield Park, AZ 85340</li>
           </ul>
           <div id="map">
@@ -72,6 +86,10 @@
           </div>
         </div>
       </section>
+      <div id="phone-cta">
+        <i class="fa fa-phone fa-lg white-text"></i>
+        <a href="tel:623-759-3151" class="phone-number white-text">623.759.3151</a>
+      </div>
       <div id="scroll-to-top">
         <a href="#top" class="smoothScroll"><i class="fa fa-chevron-up fa-2x white-text"></i></a>
       </div>
