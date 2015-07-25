@@ -3,6 +3,7 @@ General
 **********************************/
 body {
   font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Varela', sans-serif;*/
   text-shadow: 1px 1px 1px #ccc;
 }
 
@@ -12,7 +13,6 @@ a {
 
 header {
   width: 100%;
-  max-height: 80px;
   position: fixed;
   top: 0px;
   background-color: rgba(128,128,128, .3);
@@ -52,11 +52,11 @@ header {
 .content-wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 100px;
 }
+
 .content {
   background-color: rgba(255,255,255, .9);
-
   max-width: 940px;
   margin: 10% auto;
   padding: 60px 5% 60px;
@@ -99,7 +99,8 @@ header {
 }
 
 #map {
-  max-width: 400px;
+  width: 325px;
+  height: 250px;
   border-style: solid;
   border-width: medium;
   display: block;
@@ -129,8 +130,8 @@ img {
   margin: 0 auto 30px;
 }
 #contact li {
-    /*text-align: center;*/
-    padding-bottom: 5px;
+    text-align: center;
+    padding-bottom: 7px;
     list-style: none;
 }
 
@@ -142,9 +143,6 @@ Header
   max-width: 300px;
   margin: 0 auto;
 }
-
-
-
 
 h1 {
   font-family: 'Lato', sans-serif;
@@ -194,7 +192,7 @@ Colors
 body {
   background-color: #eee;
   color: #000;
-}s
+}
 
 nav a, nav a:visited {
   color: #fff;

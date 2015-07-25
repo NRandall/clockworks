@@ -1,37 +1,51 @@
 
 @media screen and (max-width: 767px) {
-  nav {
-
+  #nav-div {
     font-size: 1.125em;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width:289px;
+    list-style-type: none;
   }
 
-  nav li{
-    font-size: .8em;
+  #horizontal-style li {
     display: inline-block;
-    padding: 5px px;
-    background-color: rgba(128,128,128, .5);
+    padding: 0;
+    margin: 0 5px;
+    text-align: center;
   }
 
-  /*#title {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;
-  }*/
+  #home {
+    min-height: 800px;
+  }
+
+  #services {
+    min-height: 800px;
+  }
+
+  #about {
+    min-height: 800px;
+  }
+
+  #contact {
+    min-height: 800px;
+  }
+
 }
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  nav {
-    background: none;
-    float: right;
+  #nav-div {
     font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
+    margin: 0 auto;
+    width:370px;
+    list-style-type: none;
+  }
+
+  #horizontal-style li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 15px;
+    text-align: center;
   }
 
   .logo {
@@ -49,8 +63,7 @@
 }
 /*full desktop*/
 @media screen and (min-width: 1024px) {
-  nav {
-    background: none;
+  #nav-div {
     float: right;
     font-size: 1.125em;
     margin-right: 5%;
@@ -58,19 +71,21 @@
     width: 45%;
   }
 
-  nav li{
+  #horizontal-style li {
     display: inline-block;
     padding: 5px 5px;
     background-color: rgba(128,128,128, .5);
   }
 
   .logo {
-    float:left
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    padding: 5px 20px;
+    float:left;
+    padding: 5px;
+    margin-left: 40px
   }
 
+  .contact-wrapper {
+    padding-top: 10px;
+  }
   /*#title {
     float: left;
     margin-left: 5%;
